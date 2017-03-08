@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\HeaderLogo.jpg" />
+    <Content Include="index.html" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -76,7 +77,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Scripts\OAuthProvider.js" />
+    <Content Include="Scripts\googleOauth2.js" />
     <Content Include="Styles\welcome.css" />
+    <Content Include="Views\Landing.html" />
     <Content Include="Web.config" />
     <Content Include="Welcome.html" />
   </ItemGroup>

@@ -10,6 +10,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Application specific Reference -->
     <link href="Styles/welcome.css" rel="stylesheet" />
+    <!--CDN link for javascript client for Google OAuth-->
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="Scripts/OAuthProvider.js"></script>
 </head>
 <body>
     <div class="container-fluid div100">
@@ -34,7 +37,14 @@
             </div>
             <div id="loginArea" class="col-md-4 div100">
                 <div id="loginAreaheader" class="row loginAreaheader">
-
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                        <input type="button" value="Login with FB" onclick="handleFBSignIn()"/>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="button" value="Login with Google" onclick="handleGoogleSignIn()"/>
+                    </div>
+                    <div class="col-md-3"></div>
                 </div>
                 <div id="loginAreaUserid" class="row loginAreaUserid">
                     <div id="lblUserSpaceFirst" class="col-md-2">
@@ -61,7 +71,7 @@
                     <div id="lblPasswordSpaceLast" class="col-md-2"></div>
                 </div>
                 <div id="loginAreafooter" class="row loginAreafooter">
-
+                    <input type="submit" value="Login" />
                 </div>
             </div>
         </div>
