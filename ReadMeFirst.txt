@@ -11,7 +11,6 @@ http://stackoverflow.com/questions/34784644/what-is-the-difference-between-oauth
 https://aaronparecki.com/oauth-2-simplified/
 
 Google OAuth Platform
-=====================================================================================================================================================================================
 https://developers.google.com/identity/protocols/OAuth2 
 (Had used my first gmail id for this purpose)
 
@@ -46,4 +45,12 @@ https://developers.google.com/identity/sign-in/web/backend-auth
 ====================================================================================================================================================================================================
 Security on Single Page Application with API
 ====================================================================================================================================================================================================
+====================================================================================================================================================================================================
+Security in Web API (Will implement JWT and OAuth from Microsoft)
 
+Microsoft API Catalog
+https://msdn.microsoft.com/en-us/library/ms123401.aspx
+
+Microsoft Oauth Specification
+https://msdn.microsoft.com/en-us/library/bing-ads-user-authentication-oauth-guide.aspx
+====================================================================================================================================================================================================

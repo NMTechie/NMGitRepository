@@ -22,7 +22,7 @@ function initGapiClient() {
     gapi.client.init
      (
          {
-             apiKey: 'AIzaSyBiPYVUAfvi2Q5ic_tGobyCydo2U2AzyNM',
+             /*apiKey: 'AIzaSyBiPYVUAfvi2Q5ic_tGobyCydo2U2AzyNM', This is not required for OAuth Authentication*/ 
              clientId: '522935519119-89m6tad57u90n8hb9ailgepc0452qq6b.apps.googleusercontent.com',
              scope: 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/plus.me https://www.googleapis.com/auth/plus.login',
              discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/oauth2/v2/rest"]

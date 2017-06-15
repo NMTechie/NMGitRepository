@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		ReadMeFirst.txt = ReadMeFirst.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerSideWebAPI", "ServerSideWebAPI\ServerSideWebAPI.csproj", "{A6666A66-E46B-4F41-89D1-F72D6AF6E305}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{8BAC2F79-5233-4142-8BB6-DFCF612887DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BAC2F79-5233-4142-8BB6-DFCF612887DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BAC2F79-5233-4142-8BB6-DFCF612887DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6666A66-E46B-4F41-89D1-F72D6AF6E305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6666A66-E46B-4F41-89D1-F72D6AF6E305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6666A66-E46B-4F41-89D1-F72D6AF6E305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6666A66-E46B-4F41-89D1-F72D6AF6E305}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
