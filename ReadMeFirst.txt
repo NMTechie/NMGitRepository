@@ -48,9 +48,23 @@ Security on Single Page Application with API
 ====================================================================================================================================================================================================
 Security in Web API (Will implement JWT and OAuth from Microsoft)
 
-Microsoft API Catalog
-https://msdn.microsoft.com/en-us/library/ms123401.aspx
+It appears that as whole Microsoft does not have any OAuth end point service rather has different product 
+bucket to implement authentication.
 
-Microsoft Oauth Specification
-https://msdn.microsoft.com/en-us/library/bing-ads-user-authentication-oauth-guide.aspx
+Windows Live Services
+https://msdn.microsoft.com/en-us/library/hh243641.aspx
+"It has been superseded by a product branded Office 365"
+
+Office 356 documentation
+https://msdn.microsoft.com/en-us/office/office365/howto/platform-development-overview
+
+nileshranjan.mitra@outlook.com
+yahoo pwd
+
+
+App registration URL
+https://apps.dev.microsoft.com/
+
+Azure AD v2.0 endpoint
+https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth
 ====================================================================================================================================================================================================
