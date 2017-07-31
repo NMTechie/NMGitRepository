@@ -12,6 +12,8 @@
     <link href="Styles/welcome.css" rel="stylesheet" />
     <!--CDN link for javascript client for Google OAuth-->
     <script src="https://apis.google.com/js/api.js"></script>
+    <!--CDN link for javascript client for Microsoft Account OAuth-->
+    <script src="https://secure.aadcdn.microsoftonline-p.com/lib/0.1.1/js/msal.min.js"></script>
     <script src="Scripts/OAuthProvider.js"></script>
 </head>
 <body>
@@ -39,7 +41,7 @@
                 <div id="loginAreaheader" class="row loginAreaheader">
                     <div class="col-md-3"></div>
                     <div class="col-md-3">
-                        <input type="button" value="Login with FB" onclick="handleFBSignIn()"/>
+                        <input type="button" value="Login with MS" onclick="handleMSSignIn()"/>
                     </div>
                     <div class="col-md-3">
                         <input type="button" value="Login with Google" onclick="handleGoogleSignIn()"/>
@@ -72,6 +74,9 @@
                 </div>
                 <div id="loginAreafooter" class="row loginAreafooter">
                     <input type="submit" value="Login" />
+                </div>
+                <div id="loginAreafooter" class="row loginAreafooter">
+                    <input type="button" value="LogOut" onclick="handleLogOut('MS')"/>
                 </div>
             </div>
         </div>

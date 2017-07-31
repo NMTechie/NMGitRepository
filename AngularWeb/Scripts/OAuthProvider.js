@@ -84,3 +84,65 @@ function updateSigninStatus(isSignedIn)
     }
 }
 /******************The section is meant for the Google OAuth Provider ends*******************/
+
+/******************The section is meant for the Microsoft Account OAuth Provider starts*******************/
+var applicationConfig = {
+    clientID: '4f24c6a2-d9de-4d5a-8e90-4c30ff7a4998'
+};
+var userAgentApplication = new Msal.UserAgentApplication(applicationConfig.clientID, null, function (errorDes, token, error, tokenType) {
+    // this callback is called after loginRedirect OR acquireTokenRedirect (not used for loginPopup/aquireTokenPopup)
+});
+function handleMSSignIn(event)
+{
+    alert("Hi");
+    userAgentApplication.loginPopup(["user.read"])
+        .then(
+        function (accessToken)
+        {
+           userAgentApplication.acquireTokenSilent(["user.read"])
+           .then(
+                   function (accessToken)
+                   {
+                       UpdateUI();
+                   },
+                   function (error)
+                   {
+                       if (error.indexOf("interaction_required") != -1)
+                       {
+                           userAgentApplication.acquireTokenPopup(["user.read"])
+                           .then(
+                                    function (accessToken)
+                                    {
+                                        UpdateUI();
+                                    },
+                                    function(error)
+                                    {
+                                        alert("Error acquiring the popup:\n" + error);
+                                    }
+                           )
+                       }
+                   }
+             )            
+        // signin successful
+        },
+        function (error)
+        {
+            // handle error
+            alert("Login Error");
+        }
+    );
+}
+function UpdateUI() {
+    var user = userAgentApplication.getUser();
+    alert(user.name);
+}
+/******************The section is meant for the Microsoft Account OAuth Provider Ends*******************/
+
+function handleLogOut(identifier) {
+    if (identifier == 'Google') {
+        gapi.auth2.getAuthInstance().signOut();
+    }
+    else {
+        userAgentApplication.logout();
+    }
+}

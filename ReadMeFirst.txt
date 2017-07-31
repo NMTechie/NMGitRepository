@@ -58,13 +58,21 @@ https://msdn.microsoft.com/en-us/library/hh243641.aspx
 Office 356 documentation
 https://msdn.microsoft.com/en-us/office/office365/howto/platform-development-overview
 
+Azure AD v2.0 endpoint
+https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth
+
 nileshranjan.mitra@outlook.com
 yahoo pwd
 
+OAuth process using Microsoft Account
+https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/microsoft-logins
 
 App registration URL
 https://apps.dev.microsoft.com/
+App Name - FirstWebAPIOnMSOAuth
+AppId/ClientId - 4f24c6a2-d9de-4d5a-8e90-4c30ff7a4998
+Password/ClientSecrect - 9eYnP2nuERcXV7v2VuqdrsJ
 
-Azure AD v2.0 endpoint
-https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth
+Javascript package for the Microsoft accout Authentication
+https://github.com/Azure-Samples/active-directory-b2c-javascript-msal-singlepageapp/blob/master/index.html
 ====================================================================================================================================================================================================
