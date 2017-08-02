@@ -76,3 +76,6 @@ Password/ClientSecrect - 9eYnP2nuERcXV7v2VuqdrsJ
 Javascript package for the Microsoft accout Authentication
 https://github.com/Azure-Samples/active-directory-b2c-javascript-msal-singlepageapp/blob/master/index.html
 ====================================================================================================================================================================================================
+============================================================ GIT Visual Studio Integration ========================================================================================================================================
+https://blogs.msdn.microsoft.com/devops/2013/03/08/use-the-git-command-prompt-to-supplement-visual-studio/
+====================================================================================================================================================================================================
